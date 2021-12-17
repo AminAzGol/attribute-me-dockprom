@@ -1,11 +1,12 @@
+global:
+  resolve_timeout: 1m
+  slack_api_url: 'https://hooks.slack.com/services/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'
+
 route:
-    receiver: 'slack'
+  receiver: 'slack-notifications'
 
 receivers:
-    - name: 'slack'
-      slack_configs:
-          - send_resolved: true
-            text: "{{ .CommonAnnotations.description }}"
-            username: 'Prometheus'
-            channel: '#<channel-name>'
-            api_url: 'https://hooks.slack.com/services/<webhook-id>'
+- name: 'slack-notifications'
+  slack_configs:
+  - channel: '#monitoring-instances'
+    send_resolved: true

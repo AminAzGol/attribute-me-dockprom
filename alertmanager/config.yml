@@ -1,7 +1,12 @@
 route:
-  receiver: 'webhook-notifications'
+  receiver: 'slack'
 
 receivers:
-- name: 'webhook-notifications'
+- name: 'slack'
   slack_configs:
-    - api_url: https://hooks.slack.com/services/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
+    - send_resolved: true
+      channel: "#general"
+      api_url: https://slack.com/api/chat.postMessage
+      http_config:
+        authorization:
+          credentials: xoxb-2857315046340-2981209061634-XEi3wElT5Nt4q2sWkKVthQJ2

@@ -8,8 +8,7 @@ route:
 receivers:
 - name: 'slack-notifications'
   slack_configs:
-  - channel: '#alerting'
-    send_resolved: true
+    #  send_resolved: true
 
 
 

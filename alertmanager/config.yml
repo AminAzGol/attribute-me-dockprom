@@ -1,8 +1,7 @@
-
 route:
   receiver: 'webhook-notifications'
 
 receivers:
 - name: 'webhook-notifications'
   slack_configs:
-    - api_url: https://hooks.slack.com/services/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
+    - api_url: https://hooks.slack.com/services/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

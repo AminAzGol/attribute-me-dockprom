@@ -8,7 +8,7 @@ receivers:
 - name: 'webhook-notifications'
   webhook_configs:
     #  send_resolved: true
-    url: https://hooks.slack.com/services/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
+    url: https://hooks.slack.com/services/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
 
 
 

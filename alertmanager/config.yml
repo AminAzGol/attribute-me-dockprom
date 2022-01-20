@@ -9,4 +9,4 @@ receivers:
       api_url: https://slack.com/api/chat.postMessage
       http_config:
         authorization:
-          credentials: xoxb-2857315046340-2981209061634-XEi3wElT5Nt4q2sWkKVthQJ2
+          credentials: xoxb-2857315046340-2981209061634-4hXYxjpUUa8LgcAZGVfIj57w
